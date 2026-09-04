@@ -4,15 +4,26 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="data:," />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- DNS Prefetch for external resources -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <!-- Preconnect for critical resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Preload critical resources -->
+    <link rel="preload" as="style" href="/assets/index-D-qSwEvn.css">
+    <link rel="preload" as="script" href="/assets/index-HIYLgzbS.js">
+    <!-- Google Fonts with display=swap for better performance -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <title>PhaseTwo — Cycle-aware planning, together</title>
-    <script type="module" crossorigin src="/assets/index-HIYLgzbS.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-D-qSwEvn.css">
+    <!-- Async load CSS to avoid render blocking -->
+    <link rel="stylesheet" crossorigin href="/assets/index-D-qSwEvn.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" crossorigin href="/assets/index-D-qSwEvn.css"></noscript>
+    <!-- Module script with async to prevent blocking -->
+    <script type="module" crossorigin src="/assets/index-HIYLgzbS.js" async></script>
   </head>
   <body>
     <div id="root"></div>
